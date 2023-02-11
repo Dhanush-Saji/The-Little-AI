@@ -1,0 +1,13 @@
+.navbarParent{
+    display: flex;
+    width: 100%;
+    padding: 0.7rem 1.7rem;
+    align-items: center;
+}
+.navbarLinks > button{
+    font-weight: 500;
+}
+.navbarLinks > button:hover{
+    color: rgba(0, 0, 0, 0.89);
+    transform: scale(1.05);
+}
