@@ -1,0 +1,8 @@
+.wantToKnowLink{
+    color:var(--color-dark-brown);
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+.heroImage{
+    background-color: #F2CA9A;
+}
