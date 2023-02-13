@@ -6,3 +6,33 @@
 .heroImage{
     background-color: #F2CA9A;
 }
+.cloudLDiv{
+    position: absolute;
+    top: 70px;
+    left: 170px;
+}
+.cloudRDiv{
+    position: absolute;
+    top: 50px;
+    right: -50px;
+}
+select{
+    background-color: rgba(0, 0, 0, 0.096);
+}
+ /* ============== MEDIUM DEVICES ============== */
+ @media screen and (max-width:830px){
+    .cloudLDiv{
+        top: 130px;
+        left: 70px;
+    }
+  }
+ /* ============== MEDIUM DEVICES ============== */
+ @media screen and (max-width:380px){
+    .cloudLDiv{
+        top: 80px;
+        left: 70px;
+    }
+    .cloudRDiv{
+        display: none;
+    }
+  }

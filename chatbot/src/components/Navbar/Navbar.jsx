@@ -3,12 +3,13 @@ import logo from "../../assets/logo.png";
 import { BiLogInCircle } from "react-icons/bi";
 import { RxDotFilled } from "react-icons/rx";
 import './Navbar.css'
-import { Button, Flex, Image, Text } from "@chakra-ui/react";
+import { Button, Flex, Hide, Image, Text } from "@chakra-ui/react";
 import {HashLink} from 'react-router-hash-link'
 const Navbar = () => {
   return (
     <>
-      <div className="navbarParent">
+    <Hide below='md'>
+      <Flex className="navbarParent">
         <Flex alignItems={"center"} gap="1rem">
           <Image boxSize="80px" objectFit="contain" src={logo} alt="logo" />
           <Text fontSize="xl" as='b' color='var(--color-dark-black)'>The Little AI</Text>
@@ -31,7 +32,8 @@ const Navbar = () => {
         >
           Login
         </Button>
-      </div>
+      </Flex>
+      </Hide>
     </>
   );
 };
