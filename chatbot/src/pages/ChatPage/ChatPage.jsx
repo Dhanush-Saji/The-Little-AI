@@ -8,6 +8,7 @@ import {
   Grid,
   GridItem,
   Heading,
+  Hide,
   Image,
   Input,
   Text,
@@ -27,10 +28,9 @@ const ChatPage = () => {
         return fetchResponse(chat);
     },
     onSuccess: (data) => {
-        console.log(data);
         setchat((prev) => [
             ...prev,
-            { sender: "ai", message: data.message.startsWith('\n\n') ? data.message.replace(/^\n\n/, "") : data.message }
+            { sender: "ai", message: data.message.replace(/^\n\n/, "")}
 ,
         ]);
     }
@@ -42,14 +42,16 @@ const ChatPage = () => {
   };
   return (
     <Flex flexDirection={'column'} bg="#fcc16e" w="100%" h="100vh" pt="2rem" className="orangeParent"  position='relative'>
+      <Hide below='md'>
           <Image  position='absolute' top='150px' left='25px' zIndex='2'
-            boxSize="20rem"
+            boxSize={{base:"10rem",md:"20rem"}}
             // objectFit="cover"
             src={chatImage}
             alt="Chat Image"
             className="peekImage"
           />
-      <Flex flexDirection={'column'} bg="#f6dfcf" minW="70%" borderRadius="1.5rem" p="2rem 2rem 0rem 2rem"  className="pinkBox" overflow='auto'>
+          </Hide>
+      <Flex flexDirection={'column'} bg="#f6dfcf" w={{base:"90%",md:"70%",lg:"80%"}} borderRadius="1.5rem" p="2rem 2rem 0rem 2rem"  className="pinkBox" overflow='auto'>
             <ChatBody chat={chat} />
             <ChatInput sendMessage={sendMessage} loading={mutation.isLoading} />
       </Flex>

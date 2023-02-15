@@ -4,6 +4,7 @@ background: #f6dfcf;
 box-shadow: inset 5px 5px 9px #c0aea1,
             inset -5px -5px 9px #faefe7;
 padding: 1rem;
+overflow: auto;
 }
 .MsgDiv {
     align-self: flex-end;
@@ -29,4 +30,29 @@ padding: 1rem;
   .css-1jsl11y>*:not(style)~*:not(style){
     margin-top: 0px;
   }
+
+  .chatBodyDiv::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  
+  .chatBodyDiv::-webkit-scrollbar-track {
+    background: #f6dfcf;
+    height: 8px;
+    
+  }
+  
+  .chatBodyDiv::-webkit-scrollbar-thumb {
+    background: #b19c8d;
+    border-radius: 10px;
+  }
+  
+  .chatBodyDiv::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+
+  /* MEDIUM SCREEN */
+@media all and(max-width: 830px){
+
+}
   

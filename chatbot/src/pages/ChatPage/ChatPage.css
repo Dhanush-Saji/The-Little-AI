@@ -8,3 +8,18 @@
 .peekImage{
     transform: rotate(-50deg);
 }
+
+/* MEDIUM SCREEN */
+@media all and (max-width: 830px){
+  .pinkBox{
+  top: 40%;
+  left: 50%;
+}
+}
+/* MEDIUM SCREEN */
+@media all and (max-width: 380px){
+  .pinkBox{
+    top: 55%;
+    left: 50%;
+  }
+}
