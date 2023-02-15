@@ -19,12 +19,14 @@ import cloudL from "../../assets/cloud_left.png";
 import cloudR from "../../assets/cloud_right.png";
 import backDrop from "../../assets/heroImageBackgroundDrop.png";
 import { motion } from "framer-motion";
+import {useNavigate} from 'react-router-dom'
 
 
 const HomePage = () => {
+  const navigate = useNavigate()
   return (
-    <Grid templateColumns={{base:'repeat(1,1fr)',md:"60% 40%"}} pt='3rem'>
-      <GridItem pos="relative" mt="2rem">
+    <Grid templateColumns={{base:'repeat(1,1fr)',md:"60% 40%"}}>
+      <GridItem pos="relative" mt={{base:'6rem',md:"0rem"}}>
         <VStack
           h={{base:"500px",md:"550px",lg:"500px"}}
           border="0px"
@@ -97,8 +99,8 @@ const HomePage = () => {
       <GridItem bg={{base:'rgba(0, 0, 0, 0.03)',md:'white'}}>
         <VStack as={motion.div}
           m="auto"
-          marginTop={"3rem"}
-          w="80%"
+          marginTop={"5rem"}
+          w={{base:"80%",md:'70%'}}
           lineHeight="2rem"
           gap="0.5rem"  initial={{
             opacity :0,
@@ -126,6 +128,9 @@ const HomePage = () => {
             borderRadius="50px"
             border="5px solid #FFDDAD"
             w="100%"
+            onClick={()=>{
+              navigate('/chat')
+            }}
           >
             Let's chat
           </Button>
@@ -133,7 +138,7 @@ const HomePage = () => {
             Want to know how it works?
           </Link>
           <Text as="b">Connect with us</Text>
-          <Flex gap="1rem">
+          <Flex gap="1rem" className="socialIcons">
             <Image boxSize="60px" objectFit="contain" src={Insta} alt="insta" />
             <Image boxSize="60px" objectFit="contain" src={Twit} alt="twit" />
             <Image boxSize="60px" objectFit="contain" src={Slack} alt="slack" />

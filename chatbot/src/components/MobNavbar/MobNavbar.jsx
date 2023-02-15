@@ -1,4 +1,4 @@
-import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, Image, useDisclosure } from '@chakra-ui/react'
+import { Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerHeader, DrawerOverlay, Flex, Hide, Image, Show, useDisclosure } from '@chakra-ui/react'
 import React, { useRef } from 'react'
 import logo from "../../assets/logo.png";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -10,7 +10,7 @@ const MobNavbar = () => {
 
   const { isOpen, onOpen, onClose } = useDisclosure()
   return (
-    <>
+    <Show below='md'>
     <Flex pos={'fixed'} zIndex='4' w='100%' alignItems='center' boxShadow={'rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;'} p='0.5rem 1rem' justifyContent='space-between' bg='white'>
       <GiHamburgerMenu ref={btnRef} onClick={onOpen} fontSize='1.8rem' color="var(--color-dark-black)" />
       <Image boxSize="50px" objectFit="contain" src={logo} alt="logo" />
@@ -37,7 +37,7 @@ const MobNavbar = () => {
           </DrawerBody>
         </DrawerContent>
       </Drawer>
-    </>
+    </Show>
   )
 }
 

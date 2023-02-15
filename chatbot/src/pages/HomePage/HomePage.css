@@ -14,7 +14,14 @@
 .cloudRDiv{
     position: absolute;
     top: 50px;
-    right: -50px;
+    right: -30px;
+}
+.socialIcons > img{
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+}
+.socialIcons > img:hover{
+    transform: scale(1.1);
 }
 select{
     background-color: rgba(0, 0, 0, 0.096);

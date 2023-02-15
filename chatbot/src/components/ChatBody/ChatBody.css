@@ -1,0 +1,32 @@
+.chatBodyDiv{
+border-radius: 37px;
+background: #f6dfcf;
+box-shadow: inset 5px 5px 9px #c0aea1,
+            inset -5px -5px 9px #faefe7;
+padding: 1rem;
+}
+.MsgDiv {
+    align-self: flex-end;
+    max-width: 80%;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    word-wrap: break-word;
+    border: 1px solid #999999;
+  }
+  
+  .MsgDiv pre,.aiStyle pre {
+   
+    white-space: pre-wrap;
+  }
+  .aiStyle{
+    align-self: flex-start;
+    max-width: 80%;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    word-wrap: break-word;
+    background-color: rgba(255, 255, 255,0.6);
+  }
+  .css-1jsl11y>*:not(style)~*:not(style){
+    margin-top: 0px;
+  }
+  

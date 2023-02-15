@@ -5,12 +5,16 @@ import { RxDotFilled } from "react-icons/rx";
 import './Navbar.css'
 import { Button, Flex, Hide, Image, Text } from "@chakra-ui/react";
 import {HashLink} from 'react-router-hash-link'
+import {useNavigate} from 'react-router-dom'
 const Navbar = () => {
+  const navigate = useNavigate()
   return (
     <>
     <Hide below='md'>
       <Flex className="navbarParent">
-        <Flex alignItems={"center"} gap="1rem">
+        <Flex alignItems={"center"} gap="1rem" cursor={'pointer'} onClick={()=>{
+              navigate('/')
+            }}>
           <Image boxSize="80px" objectFit="contain" src={logo} alt="logo" />
           <Text fontSize="xl" as='b' color='var(--color-dark-black)'>The Little AI</Text>
         </Flex>

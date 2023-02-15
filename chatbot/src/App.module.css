@@ -9,6 +9,15 @@
   --color-dark-black:#313233;
   --color-light-black:#949598;
   --color-light-test:#f5f1ee;
+  --shadow-color: 25deg 29% 58%;
+  --shadow-elevation-medium:
+    0.6px 0.6px 0.9px hsl(var(--shadow-color) / 0.85),
+    12.8px 12.1px 18.5px -3px hsl(var(--shadow-color) / 0.71);
+  --shadow-elevation-high:
+    0.6px 0.6px 0.9px hsl(var(--shadow-color) / 0.79),
+    7.2px 6.7px 10.3px -1px hsl(var(--shadow-color) / 0.72),
+    23.4px 22.1px 33.8px -2px hsl(var(--shadow-color) / 0.66),
+    63.4px 59.8px 91.5px -3px hsl(var(--shadow-color) / 0.59);
 
 }
 *{
