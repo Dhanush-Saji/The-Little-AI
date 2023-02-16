@@ -27,7 +27,7 @@ const ChatInput = ({sendMessage,loading}) => {
            }}
            css={{ minHeight: "0" , height: "40px"}}
           onChange={(e)=>{setinputValue(e.target.value)}}
-            placeholder="large size"
+            placeholder="Enter here.."
             // size="5px"
             bg="white"
             borderRadius="1rem"

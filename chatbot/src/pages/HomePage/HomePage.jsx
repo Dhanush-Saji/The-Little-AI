@@ -96,7 +96,7 @@ const HomePage = () => {
           />
         </VStack>
       </GridItem>
-      <GridItem bg={{base:'rgba(0, 0, 0, 0.03)',md:'white'}}>
+      <GridItem bg={{base:'rgba(0, 0, 0, 0.03)',md:'none'}}>
         <VStack as={motion.div}
           m="auto"
           marginTop={"5rem"}

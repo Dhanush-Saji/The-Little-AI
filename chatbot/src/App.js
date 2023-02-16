@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import './App.module.css';
+import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import MobNavbar from './components/MobNavbar/MobNavbar';
 import AllRoutes from './Routes/AllRoutes';
