@@ -8,6 +8,15 @@
     cursor: pointer;
     background-color: white;
     transition: all 0.2s ease-in;
+    display: flex;
+    flex-direction: column;
+    height: 150px;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+    text-align: center;
+    padding: 2rem;
+    gap: 1rem;
 }
 .featureCards:hover {
     background-color: rgb(253, 253, 253);

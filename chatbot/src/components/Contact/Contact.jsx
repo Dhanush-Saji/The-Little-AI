@@ -1,10 +1,8 @@
 import "./contact.css";
 import { MdOutlineMail } from "react-icons/md";
-import { ImWhatsapp } from "react-icons/im";
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
-import { motion } from "framer-motion";
-import { Button, Flex, Input, Textarea, VStack } from "@chakra-ui/react";
+import { Button, Flex, Input, Textarea} from "@chakra-ui/react";
 const Contact = () => {
   const form = useRef();
 

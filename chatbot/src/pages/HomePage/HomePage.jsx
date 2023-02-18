@@ -8,7 +8,7 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import Insta from "../../assets/insta.png";
 import Twit from "../../assets/twit.png";
@@ -17,13 +17,10 @@ import "./HomePage.css";
 import heroImage from "../../assets/heroImage.png";
 import cloudL from "../../assets/cloud_left.png";
 import cloudR from "../../assets/cloud_right.png";
-import backDrop from "../../assets/heroImageBackgroundDrop.png";
 import { motion } from "framer-motion";
 import {useNavigate} from 'react-router-dom'
 import Feature from "../../components/Features/Feature";
 import Contact from "../../components/Contact/Contact";
-import Footer from "../../components/Footer/Footer";
-import {HashLink} from 'react-router-hash-link'
 
 
 const HomePage = () => {

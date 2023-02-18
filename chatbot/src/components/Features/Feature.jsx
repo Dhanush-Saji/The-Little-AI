@@ -1,6 +1,7 @@
 import { Box, Flex, Grid, Image, Text } from '@chakra-ui/react'
 import React from 'react'
 import './Feature.css'
+import { motion } from 'framer-motion';
 
 const Feature = () => {
   const featuresData = [
@@ -19,10 +20,13 @@ const Feature = () => {
     {
       featuresData.map((item,index)=>(
         
-        <Flex className='featureCards' h='150px' flexDirection={'column'} justifyContent='center' key={index} borderRadius={'10px'} boxShadow='rgba(149, 157, 165, 0.1) 0px 8px 24px;' p='2rem' textAlign='center' gap='1rem'>
+        <motion.div className='featureCards'
+        whileInView={{opacity: [0, 1] }}
+      transition={{duration:0.4,delay: (index/10),
+        ease: "easeIn",}}>
           <Image src={item.img} boxSize='70px' m='auto' />
           <Text as='b'>{item.name}</Text>
-        </Flex>
+        </motion.div>
       ))
     }
   </Grid>

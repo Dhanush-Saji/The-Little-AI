@@ -1,22 +1,9 @@
 import React, { useState } from "react";
 import "./ChatPage.css";
-import { BeatLoader } from 'react-spinners';
 import {
-  Box,
-  Button,
   Flex,
-  Grid,
-  GridItem,
-  Heading,
-  Hide,
-  Image,
-  Input,
-  Text,
-  Textarea,
-  VStack,
 } from "@chakra-ui/react";
 import { useMutation } from "react-query";
-import chatImage from "../../assets/chatImage.png";
 import ChatBody from "../../components/ChatBody/ChatBody";
 import { fetchResponse } from "../../API/Api";
 import ChatInput from './../../components/ChatInput/ChatInput';

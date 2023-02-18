@@ -1,17 +1,9 @@
 import React, { useState } from 'react'
 import { BeatLoader } from 'react-spinners';
 import {
-  Box,
   Button,
   Flex,
-  Grid,
-  GridItem,
-  Heading,
-  Image,
-  Input,
-  Text,
   Textarea,
-  VStack,
 } from "@chakra-ui/react";
 const ChatInput = ({sendMessage,loading}) => {
   const [inputValue, setinputValue] = useState("")
