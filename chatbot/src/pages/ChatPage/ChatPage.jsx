@@ -41,17 +41,8 @@ const ChatPage = () => {
     mutation.mutate();
   };
   return (
-    <Flex flexDirection={'column'} bg="#fcc16e" w="100%" h="100vh" pt="2rem" className="orangeParent"  position='relative'>
-      <Hide below='md'>
-          <Image  position='absolute' top='150px' left='25px' zIndex='2'
-            boxSize={{base:"10rem",md:"20rem"}}
-            // objectFit="cover"
-            src={chatImage}
-            alt="Chat Image"
-            className="peekImage"
-          />
-          </Hide>
-      <Flex flexDirection={'column'} bg="#f6dfcf" w={{base:"90%",md:"70%",lg:"80%"}} borderRadius="1.5rem" p="2rem 2rem 0rem 2rem"  className="pinkBox" overflow='auto'>
+    <Flex flexDirection={'column'} bg={{base:"#fcc16e"}} w="100%" p='7rem 0rem' minH={{md:"100vh"}}>
+      <Flex flexDirection={'column'} bg="#f6dfcf" w={{base:"90%",md:"70%",lg:"80%"}} borderRadius="1.5rem" p="2rem 2rem 0rem 2rem" m='auto'>
             <ChatBody chat={chat} />
             <ChatInput sendMessage={sendMessage} loading={mutation.isLoading} />
       </Flex>

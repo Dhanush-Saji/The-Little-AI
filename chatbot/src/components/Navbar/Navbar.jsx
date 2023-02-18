@@ -11,19 +11,17 @@ const Navbar = () => {
   return (
     <>
     <Hide below='md'>
-      <Flex className="navbarParent">
+      <Flex className="navbarParent" position={'fixed'} bg='white' zIndex={'5'} boxShadow='rgba(149, 157, 165, 0.2) 0px 8px 24px;'>
         <Flex alignItems={"center"} gap="1rem" cursor={'pointer'} onClick={()=>{
               navigate('/')
             }}>
-          <Image boxSize="80px" objectFit="contain" src={logo} alt="logo" />
+          <Image boxSize="60px" objectFit="contain" src={logo} alt="logo" />
           <Text fontSize="xl" as='b' color='var(--color-dark-black)'>The Little AI</Text>
         </Flex>
         <Flex marginLeft='3rem' color='var(--color-light-black)' gap='2rem' className="navbarLinks" alignItems={'center'}>
-        <button><HashLink smooth to="#">Features</HashLink></button>
+        <button><HashLink smooth to="#feature">Features</HashLink></button>
         <RxDotFilled color="var(--color-light-brown)" />
-        <button><HashLink smooth to="#">About Us</HashLink></button>
-        <RxDotFilled color="var(--color-light-brown)" />
-        <button><HashLink smooth to="#">Contact</HashLink></button>
+        <button><HashLink smooth to="#contact" scroll={el => el.scrollIntoView({ behavior: 'smooth', block: 'start' })}>Contact</HashLink></button>
         </Flex>
         <Button  size='lg'
         _hover={{ backgroundColor: '#e29a43',color:'#f5f1ee' }}

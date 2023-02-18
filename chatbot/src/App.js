@@ -3,6 +3,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import MobNavbar from './components/MobNavbar/MobNavbar';
 import AllRoutes from './Routes/AllRoutes';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
     <Navbar />
     <MobNavbar />
     <AllRoutes />
+    <Footer />
     </div>
   );
 }

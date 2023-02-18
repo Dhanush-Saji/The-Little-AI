@@ -20,13 +20,18 @@ import cloudR from "../../assets/cloud_right.png";
 import backDrop from "../../assets/heroImageBackgroundDrop.png";
 import { motion } from "framer-motion";
 import {useNavigate} from 'react-router-dom'
+import Feature from "../../components/Features/Feature";
+import Contact from "../../components/Contact/Contact";
+import Footer from "../../components/Footer/Footer";
+import {HashLink} from 'react-router-hash-link'
 
 
 const HomePage = () => {
   const navigate = useNavigate()
   return (
-    <Grid templateColumns={{base:'repeat(1,1fr)',md:"60% 40%"}}>
-      <GridItem pos="relative" mt={{base:'6rem',md:"0rem"}}>
+    <>
+    <Grid templateColumns={{base:'repeat(1,1fr)',md:"60% 40%"}} pt={{base:'0rem',md:'8rem'}} >
+      <GridItem pos="relative" mt={{base:'6rem',md:"0rem"}} className="heroImageGrid" borderRadius={{base:"0rem 8rem 0rem 0rem"}}>
         <VStack
           h={{base:"500px",md:"550px",lg:"500px"}}
           border="0px"
@@ -35,6 +40,7 @@ const HomePage = () => {
           pt="7rem"
           w="100%"
         >
+          
           <motion.div class='cloudLDiv'
             initial={{
               opacity: 0,
@@ -87,16 +93,17 @@ const HomePage = () => {
             alt="Hero Image"
             mt="auto"
           />
-          <Image
+          
+          {/* <Image
             pos="absolute"
             bottom="0px"
             w="800px"
             src={backDrop}
             alt="cloud 2"
-          />
+          /> */}
         </VStack>
       </GridItem>
-      <GridItem bg={{base:'rgba(0, 0, 0, 0.03)',md:'none'}}>
+      <GridItem bg={{base:'rgba(0, 0, 0, 0.03)',md:'none'}} pb={{base:'1rem',md:'0rem'}}>
         <VStack as={motion.div}
           m="auto"
           marginTop={"5rem"}
@@ -146,6 +153,10 @@ const HomePage = () => {
         </VStack>
       </GridItem>
     </Grid>
+    <Feature />
+    <Contact />
+    
+    </>
   );
 };
 

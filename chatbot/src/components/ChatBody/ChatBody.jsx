@@ -2,6 +2,7 @@ import { VStack } from "@chakra-ui/react";
 import React, { useEffect, useRef } from "react";
 import "./ChatBody.css";
 import autoAnimate from "@formkit/auto-animate";
+import { animateScroll } from 'react-scroll';
 const ChatBody = ({ chat }) => {
   const parent = useRef(null)
   const bottomRef = useRef(null)
@@ -9,10 +10,13 @@ const ChatBody = ({ chat }) => {
     parent.current && autoAnimate(parent.current)
   },[parent])
   useEffect(()=>{
-    bottomRef.current?.scrollIntoView({behaviour:'smooth'})
+    animateScroll.scrollToBottom({
+      containerId: 'chat-body-container',
+      duration: 500,
+    });
   },[chat])
   return (
-    <VStack h={{base:"400px",md:"600px",lg:"400px"}} w="100%" className="chatBodyDiv" gap="2" ref={parent}>
+    <VStack id="chat-body-container" h={{base:"400px",md:"600px",lg:"400px"}} w="100%" className="chatBodyDiv" gap="2" ref={parent}>
       {chat.map((item, index) => {
         return (
           <div className={item.sender !== 'ai'?"MsgDiv":"aiStyle"} key={index}>

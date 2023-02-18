@@ -1,0 +1,15 @@
+.featuresPage {
+  background-image: url("../../assets/featuresBg.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.featureCards{
+    cursor: pointer;
+    background-color: white;
+    transition: all 0.2s ease-in;
+}
+.featureCards:hover {
+    background-color: rgb(253, 253, 253);
+    transform: scale(1.1);
+}

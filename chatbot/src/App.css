@@ -5,6 +5,7 @@
 
 }
 :root{
+  --color-home-hero-background:linear-gradient(45deg, #E3A076 10%, #FCC16E 70%);;
   --color-light-brown:#fbb55f;
   --color-dark-brown:#a45c29;
   --color-dark-black:#313233;
