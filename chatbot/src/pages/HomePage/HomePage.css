@@ -4,7 +4,14 @@
     font-size: 0.8rem;
 }
 .heroImage{
-    background-color: #F2CA9A;
+    background-image: url("../../assets/heroImageBackgroundDrop.png");
+    background-size: contain;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.heroImageGrid{
+    background: var(--color-home-hero-background);
+
 }
 .cloudLDiv{
     position: absolute;
@@ -34,7 +41,7 @@ select{
     }
   }
  /* ============== MEDIUM DEVICES ============== */
- @media screen and (max-width:380px){
+ @media screen and (max-width:772px){
     .cloudLDiv{
         top: 80px;
         left: 70px;

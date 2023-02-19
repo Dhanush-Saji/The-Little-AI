@@ -27,9 +27,6 @@ overflow: auto;
     word-wrap: break-word;
     background-color: rgba(255, 255, 255,0.6);
   }
-  .css-1jsl11y>*:not(style)~*:not(style){
-    margin-top: 0px;
-  }
 
   .chatBodyDiv::-webkit-scrollbar {
     width: 8px;
@@ -51,8 +48,5 @@ overflow: auto;
     background: #555;
   }
 
-  /* MEDIUM SCREEN */
-@media all and(max-width: 830px){
 
-}
   

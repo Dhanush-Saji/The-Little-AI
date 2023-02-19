@@ -1,6 +1,8 @@
+
+
 export const fetchResponse =  async(chat) => {
   try {
-      const response = await fetch('https://the-little-ai-server.vercel.app/', { 
+      const response = await fetch(process.env.REACT_APP_API, { 
           method: 'POST',
           headers: {
               "Content-Type": "application/json"
