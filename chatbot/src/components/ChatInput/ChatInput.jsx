@@ -4,8 +4,18 @@ import {
   Button,
   Flex,
   Textarea,
+  Popover,
+  PopoverArrow,
+  PopoverBody,
+  PopoverCloseButton,
+  PopoverContent,
+  PopoverHeader,
+  PopoverTrigger,
+  useDisclosure,
 } from "@chakra-ui/react";
-const ChatInput = ({sendMessage,loading}) => {
+import {BsThreeDotsVertical} from 'react-icons/bs'
+const ChatInput = ({sendMessage,loading,clearChat}) => {
+  const { isOpen, onClose, onOpen } = useDisclosure();
   const [inputValue, setinputValue] = useState("")
   const handleSubmit = () =>{
     if(inputValue === '') return
@@ -13,7 +23,7 @@ const ChatInput = ({sendMessage,loading}) => {
     setinputValue('')
   }
   return (
-    <Flex alignItems="center" gap="1rem" py='2rem'>
+    <Flex alignItems="center" gap={{base:"0.5rem",md:'1rem'}} py='2rem'>
            <Textarea value={inputValue} onKeyDown={(e)=>{
             e.keyCode == 13 && e.shiftKey == false && handleSubmit()
            }}
@@ -40,6 +50,21 @@ const ChatInput = ({sendMessage,loading}) => {
           >
             Ask me
           </Button>
+          <Popover placement="top-start" isOpen={isOpen} onClose={onClose}>
+  <PopoverTrigger>
+    <Button size={'sm'} onClick={onOpen}><BsThreeDotsVertical /></Button>
+  </PopoverTrigger>
+  <PopoverContent w='100%'>
+    <PopoverArrow />
+    {/* <PopoverCloseButton /> */}
+    <PopoverBody>
+      <Button colorScheme={'red'}  onClick={()=>{
+        clearChat()
+        onClose()
+      }}>Clear chat</Button>
+    </PopoverBody>
+  </PopoverContent>
+</Popover>
         </Flex>
   )
 }

@@ -5,6 +5,7 @@ import MobNavbar from './components/MobNavbar/MobNavbar';
 import AllRoutes from './Routes/AllRoutes';
 import Footer from './components/Footer/Footer';
 
+
 function App() {
   return (
     <div className='App'>
