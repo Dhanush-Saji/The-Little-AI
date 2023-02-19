@@ -22,6 +22,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="nodejs" />
+   <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="expressjs" />
 </p>
 
 <h4 align="center">Deployed On:</h4>
@@ -40,9 +41,7 @@
 
 <p align="center">
   <br />&#10023;
-  <a href="#Demo">View Demo</a> &#10023;
-  <a href="#Getting-Started">Getting Started</a> &#10023; 
-  <a href="#Install">Installing</a> &#10023;
+  <a href="#The-Little-AI">Getting Started</a> &#10023; 
   <a href="#Contact">Author</a> &#10023;
 </p>
 
@@ -70,6 +69,17 @@ This chatbot is designed to understand natural language conversations, allowing 
 <br />
 
 ## The Little AI 🙈 :
+
+<table>
+  <tr>
+    <td><img src="https://i.ibb.co/jWSyZTB/1.png"  alt="home" /></td>
+    <td><img  src="https://i.ibb.co/M1F3g5s/2.png"  alt="features" /></td>
+  </tr>
+  <tr>
+    <td><img  src="https://i.ibb.co/9N86DGs/3.png"  alt="contact" /></td>
+    <td><img  src="https://i.ibb.co/CQVk5Ct/4.png"  alt="chat" /></td>
+  </tr>
+ </table>
 
 ## Contact
 
