@@ -72,12 +72,12 @@ This chatbot is designed to understand natural language conversations, allowing 
 
 <table>
   <tr>
-    <td><img src="https://i.ibb.co/jWSyZTB/1.png"  alt="home" /></td>
-    <td><img  src="https://i.ibb.co/M1F3g5s/2.png"  alt="features" /></td>
+    <td><img src="https://github.com/Dhanush-Saji/The-Little-AI/blob/main/Images/1.jpg"  alt="home" /></td>
+    <td><img  src="https://github.com/Dhanush-Saji/The-Little-AI/blob/main/Images/2.jpg"  alt="features" /></td>
   </tr>
   <tr>
-    <td><img  src="https://i.ibb.co/9N86DGs/3.png"  alt="contact" /></td>
-    <td><img  src="https://i.ibb.co/CQVk5Ct/4.png"  alt="chat" /></td>
+    <td><img  src="https://github.com/Dhanush-Saji/The-Little-AI/blob/main/Images/3.jpg"  alt="contact" /></td>
+    <td><img  src="https://github.com/Dhanush-Saji/The-Little-AI/blob/main/Images/4.jpg"  alt="chat" /></td>
   </tr>
  </table>
 
